@@ -12,7 +12,7 @@ First you will need to clone this repo:
 <br/>
 `cd finning-digital-portal-alpha`
 
-Once in the project folder run this comnmand to install:
+Once in the project folder run this comnmand to install:  
 `npm install`
 <br/>
 The above command will create a "node_modules" folder.
