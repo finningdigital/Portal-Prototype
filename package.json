@@ -1,0 +1,29 @@
+{
+  "name": "prototype-html",
+  "version": "1.0.0",
+  "description": "Finning Digital Portal prototype using Bootstrap 4 HTML, Sass and jQuery.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Portal",
+    "Prototype"
+  ],
+  "author": "Tyler Lange",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neosmedia/finning-digital-portal-alpha.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
