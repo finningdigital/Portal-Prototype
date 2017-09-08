@@ -3,22 +3,22 @@ Finning Digital Portal prototype using Bootstrap 4 HTML, Sass and jQuery.
 
 ## Instalation
 To install this Prototype you will need Node and npm installed. To see if you have it installed:
-    node -v
-    npm -v
+`node -v`
+`npm -v`
 
 First you will need to clone this repo:
-    git clone https://github.com/neosmedia/finning-digital-portal-alpha.git
-    cd finning-digital-portal-alpha
+`git clone https://github.com/neosmedia/finning-digital-portal-alpha.git`
+ `cd finning-digital-portal-alpha`
 
 Once in the project folder run this comnmand to install:
-    npm install
+`npm install`
 The above command will create a "node_modules" folder.
 
 To run locally you will need the Gulp CLI installed globally:
-    npm install -g gulp-cli
+`npm install -g gulp-cli`
 
 To build and view in a browser http://localhost:3000/ simply run:
-    gulp
+`gulp`
 
 ## Dependencies
 
