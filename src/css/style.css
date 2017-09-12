@@ -9927,12 +9927,12 @@ body {
   float: left; }
 
 .site-header .site-logo {
-  display: block;
-  float: left;
-  height: 40px;
+  display: inline-block;
+  float: none;
+  height: 17px;
   zoom: 1;
   color: #343434;
-  line-height: 40px; }
+  line-height: 17px; }
 
 .site-header .site-logo:after, .site-header .site-logo:before {
   content: " ";
@@ -9943,9 +9943,9 @@ body {
 
 .site-header .site-logo img {
   float: left;
-  height: 50px;
+  height: 17px;
   position: relative;
-  top: -5px; }
+  top: 0px; }
 
 @media (max-width: 767px) {
   .site-header .site-logo img {
@@ -11441,7 +11441,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  background: #fff;
+  background: #f5f7f6;
   height: 100%;
   border-right: solid 1px #c5d6de;
   overflow: auto;
