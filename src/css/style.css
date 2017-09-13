@@ -12404,7 +12404,7 @@ html {
   transition: transform .3s,width .3s,bottom .3s,-webkit-transform .3s; }
 
 .show-hide-sidebar:hover span, .show-hide-sidebar:hover span:after, .show-hide-sidebar:hover span:before {
-  background-color: #00a8ff; }
+  background-color: #ffc200; }
 
 @media (max-width: 1056px) {
   .show-hide-sidebar {
