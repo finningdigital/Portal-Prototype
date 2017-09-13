@@ -1,3 +1,7 @@
+// Imports
+
+@import "type";
+
 // Portal styles
 
 $bg-color: #eceff4;
@@ -7,14 +11,14 @@ body {
 }
 
 body.index {
-	background: white;
+  background: #fff;
 }
 
 // Starter Page
 
 .hero-starter {
-	margin: 5rem auto;
-	text-align: center;
+  margin: 5rem auto;
+  text-align: center;
 }
 
 // StartUI CSS

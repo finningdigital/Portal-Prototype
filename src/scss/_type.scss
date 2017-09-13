@@ -1,0 +1,101 @@
+// Typography
+
+/* ==========================================================================
+   #FONTS
+   ========================================================================== */
+/**
+ * @font-face declarations for webfont files used in this project.
+ *
+ * Fonts include:
+ * 1) UniversLT: Light Condensed, Condensed.
+ * 2) Gill Sans: Light, Medium.
+ *
+ * Font assets supplied by @patch_maloney via myfonts.com.
+ */
+/**
+ * Gill Sans.
+ *
+ * 1. GillSansMTStd-Medium.
+ * 2. GillSansMTStd-Light.
+ */
+@font-face {
+  font-family: "GillSansMTStd";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/322AD7_9_0.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/322AD7_9_0.woff2") format("woff2"), url("../assets/fonts/322AD7_9_0.woff") format("woff"), url("../assets/fonts/322AD7_9_0.ttf") format("truetype"), url("../assets/fonts/322AD7_9_0.svg#GillSansMTStd") format("svg"); }
+
+@font-face {
+  font-family: "GillSansMTStd";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../assets/fonts/322AD7_7_0.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/322AD7_7_0.woff2") format("woff2"), url("../assets/fonts/322AD7_7_0.woff") format("woff"), url("../assets/fonts/322AD7_7_0.ttf") format("truetype"), url("../assets/fonts/322AD7_7_0.svg#GillSansMTStd") format("svg"); }
+
+/**
+ * Univers LT.
+ *
+ * 1. UniversLT-Condensed.
+ * 2. GillSansMTStd-Light.
+ */
+@font-face {
+  font-family: "UniversLT";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/322AD7_4_0.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/322AD7_4_0.woff2") format("woff2"), url("../assets/fonts/322AD7_4_0.woff") format("woff"), url("../assets/fonts/322AD7_4_0.ttf") format("truetype"), url("../assets/fonts/322AD7_4_0.svg#UniversLT") format("svg"); }
+
+@font-face {
+  font-family: "UniversLT";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../assets/fonts/322AD7_2_0.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/322AD7_2_0.woff2") format("woff2"), url("../assets/fonts/322AD7_2_0.woff") format("woff"), url("../assets/fonts/322AD7_2_0.ttf") format("truetype"), url("../assets/fonts/322AD7_2_0.svg#UniversLT") format("svg"); }
+
+  /* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+/**
+ * Default styles for headings 1 - 6.
+ *
+ * Anything more specific than the font family, weight and size or heading
+ * variations should be applied via targeted classes, rather than the default.
+ */
+h1 {
+  font-size: 36px;
+  font-size: 2.4rem;
+  font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: .8px; }
+
+h2 {
+  font-size: 28px;
+  font-size: 1.86667rem;
+  font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: .8px; }
+
+h3 {
+  font-size: 24px;
+  font-size: 1.6rem;
+  font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: .8px; }
+
+h4 {
+  font-size: 20px;
+  font-size: 1.33333rem;
+  font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: .8px; }
+
+h5 {
+  font-size: 18px;
+  font-size: 1.2rem;
+  font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: .8px; }
+
+h6 {
+  font-size: 16px;
+  font-size: 1.06667rem;
+  font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: .8px; }
+
