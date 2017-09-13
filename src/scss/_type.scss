@@ -48,7 +48,28 @@
   font-weight: 200;
   src: url("../assets/fonts/322AD7_2_0.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/322AD7_2_0.woff2") format("woff2"), url("../assets/fonts/322AD7_2_0.woff") format("woff"), url("../assets/fonts/322AD7_2_0.ttf") format("truetype"), url("../assets/fonts/322AD7_2_0.svg#UniversLT") format("svg"); }
 
-  /* ==========================================================================
+
+/* ==========================================================================
+   #BODY
+   ========================================================================== */
+/**
+ * Default styles for pages.
+ */
+
+ html,
+ body {
+    font-family: "GillSansMTStd", arial, sans-serif;
+    font-size: 0.9375em;
+    font-weight: 200;
+    line-height: 1.73333;
+    text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
    #HEADINGS
    ========================================================================== */
 /**
@@ -62,40 +83,76 @@ h1 {
   font-size: 2.4rem;
   font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
   font-weight: 200;
-  letter-spacing: .8px; }
+  letter-spacing: .8px;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
 
 h2 {
   font-size: 28px;
   font-size: 1.86667rem;
   font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
   font-weight: 200;
-  letter-spacing: .8px; }
+  letter-spacing: .8px;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
 
 h3 {
   font-size: 24px;
   font-size: 1.6rem;
   font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
   font-weight: 200;
-  letter-spacing: .8px; }
+  letter-spacing: .8px;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
 
 h4 {
   font-size: 20px;
   font-size: 1.33333rem;
   font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
   font-weight: 200;
-  letter-spacing: .8px; }
+  letter-spacing: .8px;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
 
 h5 {
   font-size: 18px;
   font-size: 1.2rem;
   font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
   font-weight: 200;
-  letter-spacing: .8px; }
+  letter-spacing: .8px;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
 
 h6 {
   font-size: 16px;
   font-size: 1.06667rem;
   font-family: "UniversLT", "Helvetica Neue", helvetica, arial, sans-serif;
   font-weight: 200;
-  letter-spacing: .8px; }
+  letter-spacing: .8px;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
 
