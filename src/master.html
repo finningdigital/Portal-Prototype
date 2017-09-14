@@ -23,818 +23,534 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
-
     
   </head>
-  <body class="with-side-menu control-panel control-panel-compact">
+  <body class="control-panel control-panel-compact">
+        <header class="site-header">
+            <div class="container-fluid">
+                <button id="navbarSideButton" type="button" class="show-hide-sidebar">
+                    <span>toggle menu</span>
+                </button>
+        
 
-    <header class="site-header">
-        <div class="container-fluid">
-            <button id="show-hide-sidebar-toggle" class="show-hide-sidebar">
-                <span>toggle menu</span>
-            </button>
-    
-            <button class="hamburger hamburger--htla">
-                <span>toggle menu</span>
-            </button>
-
-            <a href="#" class="site-logo">
-                <img class="d-none d-sm-none d-md-none d-lg-block d-xl-block" src="assets/img/logo-findig-inv@2x.png" alt="">
-                <img class="d-sm-block d-md-block d-lg-none d-xl-none" src="assets/icons/f-icon.png" alt="">
-            </a>
-            <div class="site-header-content">
-                <div class="site-header-content-in">
-                    <div class="site-header-shown">
-                        <div class="dropdown dropdown-notification notif">
-                            <a href="#"
-                               class="header-alarm dropdown-toggle active"
-                               id="dd-notification"
-                               data-toggle="dropdown"
-                               aria-haspopup="true"
-                               aria-expanded="false">
-                                <i class="font-icon-alarm"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-notif" aria-labelledby="dd-notification">
-                                <div class="dropdown-menu-notif-header">
-                                    Notifications
-                                    <span class="label label-pill label-danger">4</span>
-                                </div>
-                                <div class="dropdown-menu-notif-list">
-                                    <div class="dropdown-menu-notif-item">
-                                        <div class="photo">
-                                            <img src="assets/img/photo-64-1.jpg" alt="">
-                                        </div>
-                                        <div class="dot"></div>
-                                        <a href="#">Morgan</a> was bothering about something
-                                        <div class="color-blue-grey-lighter">7 hours ago</div>
-                                    </div>
-                                    <div class="dropdown-menu-notif-item">
-                                        <div class="photo">
-                                            <img src="assets/img/photo-64-2.jpg" alt="">
-                                        </div>
-                                        <div class="dot"></div>
-                                        <a href="#">Lioneli</a> had commented on this <a href="#">Super Important Thing</a>
-                                        <div class="color-blue-grey-lighter">7 hours ago</div>
-                                    </div>
-                                    <div class="dropdown-menu-notif-item">
-                                        <div class="photo">
-                                            <img src="assets/img/photo-64-3.jpg" alt="">
-                                        </div>
-                                        <div class="dot"></div>
-                                        <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
-                                        <div class="color-blue-grey-lighter">7 hours ago</div>
-                                    </div>
-                                    <div class="dropdown-menu-notif-item">
-                                        <div class="photo">
-                                            <img src="assets/img/photo-64-4.jpg" alt="">
-                                        </div>
-                                        <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to see <a href="#">This Movie</a>
-                                        <div class="color-blue-grey-lighter">7 hours ago</div>
-                                    </div>
-                                </div>
-                                <div class="dropdown-menu-notif-more">
-                                    <a href="#">See more</a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="dropdown dropdown-notification messages">
-                            <a href="#"
-                               class="header-alarm dropdown-toggle active"
-                               id="dd-messages"
-                               data-toggle="dropdown"
-                               aria-haspopup="true"
-                               aria-expanded="false">
-                                <i class="font-icon-mail"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-messages" aria-labelledby="dd-messages">
-                                <div class="dropdown-menu-messages-header">
-                                    <ul class="nav" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active"
-                                               data-toggle="tab"
-                                               href="#tab-incoming"
-                                               role="tab">
-                                                Inbox
-                                                <span class="label label-pill label-danger">8</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link"
-                                               data-toggle="tab"
-                                               href="#tab-outgoing"
-                                               role="tab">Outbox</a>
-                                        </li>
-                                    </ul>
-                                    <!--<button type="button" class="create">
-                                        <i class="font-icon font-icon-pen-square"></i>
-                                    </button>-->
-                                </div>
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="tab-incoming" role="tabpanel">
-                                        <div class="dropdown-menu-messages-list">
-                                            <a href="#" class="mess-item">
-                                                <span class="avatar-preview avatar-preview-32"><img src="assets/assets/img/photo-64-2.jpg" alt=""></span>
-                                                <span class="mess-item-name">Tim Collins</span>
-                                                <span class="mess-item-txt">Morgan was bothering about something!</span>
-                                            </a>
-                                            <a href="#" class="mess-item">
-                                                <span class="avatar-preview avatar-preview-32"><img src="assets/img/avatar-2-64.png" alt=""></span>
-                                                <span class="mess-item-name">Christian Burton</span>
-                                                <span class="mess-item-txt">Morgan was bothering about something! Morgan was bothering about something.</span>
-                                            </a>
-                                            <a href="#" class="mess-item">
-                                                <span class="avatar-preview avatar-preview-32"><img src="assets/assets/img/photo-64-2.jpg" alt=""></span>
-                                                <span class="mess-item-name">Tim Collins</span>
-                                                <span class="mess-item-txt">Morgan was bothering about something!</span>
-                                            </a>
-                                            <a href="#" class="mess-item">
-                                                <span class="avatar-preview avatar-preview-32"><img src="assets/img/avatar-2-64.png" alt=""></span>
-                                                <span class="mess-item-name">Christian Burton</span>
-                                                <span class="mess-item-txt">Morgan was bothering about something...</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab-outgoing" role="tabpanel">
-                                        <div class="dropdown-menu-messages-list">
-                                            <a href="#" class="mess-item">
-                                                <span class="avatar-preview avatar-preview-32"><img src="assets/img/avatar-2-64.png" alt=""></span>
-                                                <span class="mess-item-name">Christian Burton</span>
-                                                <span class="mess-item-txt">Morgan was bothering about something! Morgan was bothering about something...</span>
-                                            </a>
-                                            <a href="#" class="mess-item">
-                                                <span class="avatar-preview avatar-preview-32"><img src="assets/assets/img/photo-64-2.jpg" alt=""></span>
-                                                <span class="mess-item-name">Tim Collins</span>
-                                                <span class="mess-item-txt">Morgan was bothering about something! Morgan was bothering about something.</span>
-                                            </a>
-                                            <a href="#" class="mess-item">
-                                                <span class="avatar-preview avatar-preview-32"><img src="assets/img/avatar-2-64.png" alt=""></span>
-                                                <span class="mess-item-name">Christian Burtons</span>
-                                                <span class="mess-item-txt">Morgan was bothering about something!</span>
-                                            </a>
-                                            <a href="#" class="mess-item">
-                                                <span class="avatar-preview avatar-preview-32"><img src="assets/assets/img/photo-64-2.jpg" alt=""></span>
-                                                <span class="mess-item-name">Tim Collins</span>
-                                                <span class="mess-item-txt">Morgan was bothering about something!</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dropdown-menu-notif-more">
-                                    <a href="#">See more</a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="dropdown dropdown-lang">
-                            <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="flag-icon flag-icon-us"></span>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <div class="dropdown-menu-col">
-                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-ru"></span>Русский</a>
-                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-de"></span>Deutsch</a>
-                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-it"></span>Italiano</a>
-                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-es"></span>Español</a>
-                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-pl"></span>Polski</a>
-                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-li"></span>Lietuviu</a>
-                                </div>
-                                <div class="dropdown-menu-col">
-                                    <a class="dropdown-item current" href="#"><span class="flag-icon flag-icon-us"></span>English</a>
-                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-fr"></span>Français</a>
-                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-by"></span>Беларускi</a>
-                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-ua"></span>Українська</a>
-                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-cz"></span>Česky</a>
-                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-ch"></span>中國</a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="dropdown user-menu">
-                            <button class="dropdown-toggle" id="dd-user-menu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="assets/img/avatar-2-64.png" alt="">
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd-user-menu">
-                                <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-user"></span>Profile</a>
-                                <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-cog"></span>Settings</a>
-                                <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-question-sign"></span>Help</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-log-out"></span>Logout</a>
-                            </div>
-                        </div>
-    
-                        <button type="button" class="burger-right">
-                            <i class="font-icon-menu-addl"></i>
-                        </button>
-                    </div><!--.site-header-shown-->
-    
-                    <div class="mobile-menu-right-overlay"></div>
-                    <div class="site-header-collapsed">
-                        <div class="site-header-collapsed-in">
-                            <div class="dropdown dropdown-typical">
-                                <div class="dropdown-menu" aria-labelledby="dd-header-sales">
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
-                                </div>
-                            </div>
-                            <div class="dropdown dropdown-typical">
-                                <a class="dropdown-toggle" id="dd-header-marketing" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="font-icon font-icon-cogwheel"></span>
-                                    <span class="lbl">Lorem Ipsum</span>
+                <a href="#" class="site-logo">
+                    <img class="d-none d-sm-none d-md-none d-lg-block d-xl-block" src="assets/img/logo-findig-inv@2x.png" alt="">
+                    <img class="d-sm-block d-md-block d-lg-none d-xl-none" src="assets/icons/f-icon.png" alt="">
+                </a>
+                <div class="site-header-content">
+                    <div class="site-header-content-in">
+                        <div class="site-header-shown">
+                            <div class="dropdown dropdown-notification notif">
+                                <a href="#"
+                                   class="header-alarm dropdown-toggle active"
+                                   id="dd-notification"
+                                   data-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <i class="fa fa-bell-o"></i>
                                 </a>
-    
-                                <div class="dropdown-menu" aria-labelledby="dd-header-marketing">
-                                    <a class="dropdown-item" href="#">Current Search</a>
-                                    <a class="dropdown-item" href="#">Search for Issues</a>
-                                    <div class="dropdown-divider"></div>
-                                    <div class="dropdown-header">Recent issues</div>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
-                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
-                                    <div class="dropdown-more">
-                                        <div class="dropdown-more-caption padding">more...</div>
-                                        <div class="dropdown-more-sub">
-                                            <div class="dropdown-more-sub-in">
-                                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
-                                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
-                                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
-                                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
-                                                <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-notif" aria-labelledby="dd-notification">
+                                    <div class="dropdown-menu-notif-header">
+                                        Notifications
+                                        <span class="label label-pill label-danger">4</span>
+                                    </div>
+                                    <div class="dropdown-menu-notif-list">
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="assets/img/photo-64-1.jpg" alt="">
                                             </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Morgan</a> was bothering about something
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="assets/img/photo-64-2.jpg" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Lioneli</a> had commented on this <a href="#">Super Important Thing</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="assets/img/photo-64-3.jpg" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="assets/img/photo-64-4.jpg" alt="">
+                                            </div>
+                                            <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to see <a href="#">This Movie</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
                                         </div>
                                     </div>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Import Issues from CSV</a>
-                                    <div class="dropdown-divider"></div>
-                                    <div class="dropdown-header">Filters</div>
-                                    <a class="dropdown-item" href="#">My Open Issues</a>
-                                    <a class="dropdown-item" href="#">Reported by Me</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Manage filters</a>
-                                    <div class="dropdown-divider"></div>
-                                    <div class="dropdown-header">Timesheet</div>
-                                    <a class="dropdown-item" href="#">Subscribtions</a>
+                                    <div class="dropdown-menu-notif-more">
+                                        <a href="#">See more</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="dropdown dropdown-typical">
-                                <a href="#" class="dropdown-toggle no-arr">
-                                    <span class="font-icon font-icon-page"></span>
-                                    <span class="lbl">Vehicles</span>
-                                    <span class="label label-pill label-danger">35</span>
+        
+                            <div class="dropdown dropdown-notification messages">
+                                <a href="#"
+                                   class="header-alarm dropdown-toggle active"
+                                   id="dd-messages"
+                                   data-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <i class="fa fa-comments-o"></i>
                                 </a>
-                            </div>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" id="dd-header-add" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    New
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dd-header-add">
-                                    <a class="dropdown-item" href="#">Quant and Verbal</a>
-                                    <a class="dropdown-item" href="#">Real Gmat Test</a>
-                                    <a class="dropdown-item" href="#">Prep Official App</a>
-                                    <a class="dropdown-item" href="#">CATprer Test</a>
-                                    <a class="dropdown-item" href="#">Third Party Test</a>
-                                </div>
-                            </div>
-                            <div class="help-dropdown">
-                                <button type="button">
-                                    <i class="font-icon font-icon-help"></i>
-                                </button>
-                                <div class="help-dropdown-popup">
-                                    <div class="help-dropdown-popup-side">
-                                        <ul>
-                                            <li><a href="#">Getting Started</a></li>
-                                            <li><a href="#" class="active">Creating a new project</a></li>
-                                            <li><a href="#">Adding customers</a></li>
-                                            <li><a href="#">Settings</a></li>
-                                            <li><a href="#">Importing data</a></li>
-                                            <li><a href="#">Exporting data</a></li>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-messages" aria-labelledby="dd-messages">
+                                    <div class="dropdown-menu-messages-header">
+                                        <ul class="nav" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active"
+                                                   data-toggle="tab"
+                                                   href="#tab-incoming"
+                                                   role="tab">
+                                                    Inbox
+                                                    <span class="label label-pill label-danger">8</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link"
+                                                   data-toggle="tab"
+                                                   href="#tab-outgoing"
+                                                   role="tab">Outbox</a>
+                                            </li>
                                         </ul>
+                                        <!--<button type="button" class="create">
+                                            <i class="font-icon font-icon-pen-square"></i>
+                                        </button>-->
                                     </div>
-                                    <div class="help-dropdown-popup-cont">
-                                        <div class="help-dropdown-popup-cont-in">
-                                            <div class="jscroll">
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    Lorem Ipsum is simply
-                                                    <span class="describe">Lorem Ipsum has been the industry's standard dummy text </span>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab-incoming" role="tabpanel">
+                                            <div class="dropdown-menu-messages-list">
+                                                <a href="#" class="mess-item">
+                                                    <span class="avatar-preview avatar-preview-32"><img src="assets/assets/img/photo-64-2.jpg" alt=""></span>
+                                                    <span class="mess-item-name">Tim Collins</span>
+                                                    <span class="mess-item-txt">Morgan was bothering about something!</span>
                                                 </a>
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    Contrary to popular belief
-                                                    <span class="describe">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</span>
+                                                <a href="#" class="mess-item">
+                                                    <span class="avatar-preview avatar-preview-32"><img src="assets/img/avatar-2-64.png" alt=""></span>
+                                                    <span class="mess-item-name">Christian Burton</span>
+                                                    <span class="mess-item-txt">Morgan was bothering about something! Morgan was bothering about something.</span>
                                                 </a>
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    The point of using Lorem Ipsum
-                                                    <span class="describe">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</span>
+                                                <a href="#" class="mess-item">
+                                                    <span class="avatar-preview avatar-preview-32"><img src="assets/assets/img/photo-64-2.jpg" alt=""></span>
+                                                    <span class="mess-item-name">Tim Collins</span>
+                                                    <span class="mess-item-txt">Morgan was bothering about something!</span>
                                                 </a>
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    Lorem Ipsum
-                                                    <span class="describe">There are many variations of passages of Lorem Ipsum available</span>
+                                                <a href="#" class="mess-item">
+                                                    <span class="avatar-preview avatar-preview-32"><img src="assets/img/avatar-2-64.png" alt=""></span>
+                                                    <span class="mess-item-name">Christian Burton</span>
+                                                    <span class="mess-item-txt">Morgan was bothering about something...</span>
                                                 </a>
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    Lorem Ipsum is simply
-                                                    <span class="describe">Lorem Ipsum has been the industry's standard dummy text </span>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-outgoing" role="tabpanel">
+                                            <div class="dropdown-menu-messages-list">
+                                                <a href="#" class="mess-item">
+                                                    <span class="avatar-preview avatar-preview-32"><img src="assets/img/avatar-2-64.png" alt=""></span>
+                                                    <span class="mess-item-name">Christian Burton</span>
+                                                    <span class="mess-item-txt">Morgan was bothering about something! Morgan was bothering about something...</span>
                                                 </a>
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    Contrary to popular belief
-                                                    <span class="describe">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</span>
+                                                <a href="#" class="mess-item">
+                                                    <span class="avatar-preview avatar-preview-32"><img src="assets/assets/img/photo-64-2.jpg" alt=""></span>
+                                                    <span class="mess-item-name">Tim Collins</span>
+                                                    <span class="mess-item-txt">Morgan was bothering about something! Morgan was bothering about something.</span>
                                                 </a>
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    The point of using Lorem Ipsum
-                                                    <span class="describe">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</span>
+                                                <a href="#" class="mess-item">
+                                                    <span class="avatar-preview avatar-preview-32"><img src="assets/img/avatar-2-64.png" alt=""></span>
+                                                    <span class="mess-item-name">Christian Burtons</span>
+                                                    <span class="mess-item-txt">Morgan was bothering about something!</span>
                                                 </a>
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    Lorem Ipsum
-                                                    <span class="describe">There are many variations of passages of Lorem Ipsum available</span>
-                                                </a>
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    Lorem Ipsum is simply
-                                                    <span class="describe">Lorem Ipsum has been the industry's standard dummy text </span>
-                                                </a>
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    Contrary to popular belief
-                                                    <span class="describe">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</span>
-                                                </a>
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    The point of using Lorem Ipsum
-                                                    <span class="describe">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</span>
-                                                </a>
-                                                <a href="#" class="help-dropdown-popup-item">
-                                                    Lorem Ipsum
-                                                    <span class="describe">There are many variations of passages of Lorem Ipsum available</span>
+                                                <a href="#" class="mess-item">
+                                                    <span class="avatar-preview avatar-preview-32"><img src="assets/assets/img/photo-64-2.jpg" alt=""></span>
+                                                    <span class="mess-item-name">Tim Collins</span>
+                                                    <span class="mess-item-txt">Morgan was bothering about something!</span>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="dropdown-menu-notif-more">
+                                        <a href="#">See more</a>
+                                    </div>
                                 </div>
-                            </div><!--.help-dropdown-->
-                            
-                            <div class="site-header-search-container">
-                                <form class="site-header-search closed">
-                                    <input type="text" placeholder="Search"/>
-                                    <button type="submit">
-                                        <span class="font-icon-search"></span>
-                                    </button>
-                                    <div class="overlay"></div>
-                                </form>
                             </div>
-                        </div><!--.site-header-collapsed-in-->
-                    </div><!--.site-header-collapsed-->
-                </div><!--site-header-content-in-->
-            </div><!--.site-header-content-->
-        </div><!--.container-fluid-->
-    </header><!--.site-header-->
+        
+                            <div class="dropdown dropdown-lang">
+                                <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="flag-icon flag-icon-us"></span>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-menu-col">
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-ru"></span>Русский</a>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-de"></span>Deutsch</a>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-it"></span>Italiano</a>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-es"></span>Español</a>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-pl"></span>Polski</a>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-li"></span>Lietuviu</a>
+                                    </div>
+                                    <div class="dropdown-menu-col">
+                                        <a class="dropdown-item current" href="#"><span class="flag-icon flag-icon-us"></span>English</a>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-fr"></span>Français</a>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-by"></span>Беларускi</a>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-ua"></span>Українська</a>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-cz"></span>Česky</a>
+                                        <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-ch"></span>中國</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="dropdown user-menu">
+                                <button class="dropdown-toggle" id="dd-user-menu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="assets/img/avatar-2-64.png" alt="">
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd-user-menu">
+                                    <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-user"></span>Profile</a>
+                                    <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-cog"></span>Settings</a>
+                                    <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-question-sign"></span>Help</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-log-out"></span>Logout</a>
+                                </div>
+                            </div>
+        
+                            <button type="button" class="burger-right">
+                                <i class="font-icon-menu-addl"></i>
+                            </button>
+                        </div><!--.site-header-shown-->
+        
+                        <div class="mobile-menu-right-overlay"></div>
+                        <div class="site-header-collapsed">
+                            <div class="site-header-collapsed-in">
+                                <div class="dropdown dropdown-typical">
+                                    <div class="dropdown-menu" aria-labelledby="dd-header-sales">
+                                        <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
+                                        <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
+                                        <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
+                                        <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
+                                        <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-typical">
+                                    <a class="dropdown-toggle" id="dd-header-marketing" data-target="#" href="http://example.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="font-icon font-icon-cogwheel"></span>
+                                        <span class="lbl">Lorem Ipsum</span>
+                                    </a>
+        
+                                    <div class="dropdown-menu" aria-labelledby="dd-header-marketing">
+                                        <a class="dropdown-item" href="#">Current Search</a>
+                                        <a class="dropdown-item" href="#">Search for Issues</a>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-header">Recent issues</div>
+                                        <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
+                                        <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
+                                        <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
+                                        <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
+                                        <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
+                                        <div class="dropdown-more">
+                                            <div class="dropdown-more-caption padding">more...</div>
+                                            <div class="dropdown-more-sub">
+                                                <div class="dropdown-more-sub-in">
+                                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-home"></span>Quant and Verbal</a>
+                                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-cart"></span>Real Gmat Test</a>
+                                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-speed"></span>Prep Official App</a>
+                                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-users"></span>CATprer Test</a>
+                                                    <a class="dropdown-item" href="#"><span class="font-icon font-icon-comments"></span>Third Party Test</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Import Issues from CSV</a>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-header">Filters</div>
+                                        <a class="dropdown-item" href="#">My Open Issues</a>
+                                        <a class="dropdown-item" href="#">Reported by Me</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Manage filters</a>
+                                        <div class="dropdown-divider"></div>
+                                        <div class="dropdown-header">Timesheet</div>
+                                        <a class="dropdown-item" href="#">Subscribtions</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown dropdown-typical">
+                                    <a href="#" class="dropdown-toggle no-arr">
+                                        <span class="font-icon font-icon-page"></span>
+                                        <span class="lbl">Vehicles</span>
+                                        <span class="label label-pill label-danger">35</span>
+                                    </a>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" id="dd-header-add" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        New
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dd-header-add">
+                                        <a class="dropdown-item" href="#">Quant and Verbal</a>
+                                        <a class="dropdown-item" href="#">Real Gmat Test</a>
+                                        <a class="dropdown-item" href="#">Prep Official App</a>
+                                        <a class="dropdown-item" href="#">CATprer Test</a>
+                                        <a class="dropdown-item" href="#">Third Party Test</a>
+                                    </div>
+                                </div>
+                                <div class="help-dropdown">
+                                    <button type="button">
+                                        <i class="font-icon font-icon-help"></i>
+                                    </button>
+                                    <div class="help-dropdown-popup">
+                                        <div class="help-dropdown-popup-side">
+                                            <ul>
+                                                <li><a href="#">Getting Started</a></li>
+                                                <li><a href="#" class="active">Creating a new project</a></li>
+                                                <li><a href="#">Adding customers</a></li>
+                                                <li><a href="#">Settings</a></li>
+                                                <li><a href="#">Importing data</a></li>
+                                                <li><a href="#">Exporting data</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="help-dropdown-popup-cont">
+                                            <div class="help-dropdown-popup-cont-in">
+                                                <div class="jscroll">
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        Lorem Ipsum is simply
+                                                        <span class="describe">Lorem Ipsum has been the industry's standard dummy text </span>
+                                                    </a>
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        Contrary to popular belief
+                                                        <span class="describe">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</span>
+                                                    </a>
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        The point of using Lorem Ipsum
+                                                        <span class="describe">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</span>
+                                                    </a>
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        Lorem Ipsum
+                                                        <span class="describe">There are many variations of passages of Lorem Ipsum available</span>
+                                                    </a>
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        Lorem Ipsum is simply
+                                                        <span class="describe">Lorem Ipsum has been the industry's standard dummy text </span>
+                                                    </a>
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        Contrary to popular belief
+                                                        <span class="describe">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</span>
+                                                    </a>
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        The point of using Lorem Ipsum
+                                                        <span class="describe">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</span>
+                                                    </a>
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        Lorem Ipsum
+                                                        <span class="describe">There are many variations of passages of Lorem Ipsum available</span>
+                                                    </a>
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        Lorem Ipsum is simply
+                                                        <span class="describe">Lorem Ipsum has been the industry's standard dummy text </span>
+                                                    </a>
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        Contrary to popular belief
+                                                        <span class="describe">Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</span>
+                                                    </a>
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        The point of using Lorem Ipsum
+                                                        <span class="describe">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</span>
+                                                    </a>
+                                                    <a href="#" class="help-dropdown-popup-item">
+                                                        Lorem Ipsum
+                                                        <span class="describe">There are many variations of passages of Lorem Ipsum available</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--.help-dropdown-->
+                                
+                                <div class="site-header-search-container">
+                                    <form class="site-header-search closed">
+                                        <input type="text" placeholder="Search"/>
+                                        <button type="submit">
+                                            <span class="font-icon-search"></span>
+                                        </button>
+                                        <div class="overlay"></div>
+                                    </form>
+                                </div>
+                            </div><!--.site-header-collapsed-in-->
+                        </div><!--.site-header-collapsed-->
+                    </div><!--site-header-content-in-->
+                </div><!--.site-header-content-->
+            </div><!--.container-fluid-->
+        </header><!--.site-header-->
 
-    <div class="mobile-menu-left-overlay"></div>
-    <nav class="side-menu">
-        <header class="side-menu-title">Favorites</header>
-        <hr />
-        <header class="side-menu-title">Menu</header>
-        <ul class="side-menu-list">
-            <li class="grey">
-                <a href="#">
-                    <span class="lbl">Utilization</span>
-                </a>
-            </li>
-            <li class="grey with-sub">
-                <span>
-                    <i class="font-icon font-icon-dashboard"></i>
-                    <span class="lbl">Asset Utilization</span>
-                </span>
-                <ul>
-                    <li><a href="index.html"><span class="lbl">Default</span><span class="label label-custom label-pill label-danger">new</span></a></li>
-                    <li><a href="dashboard-top-menu.html"><span class="lbl">Top menu</span></a></li>
-                    <li><a href="side-menu-compact-full.html"><span class="lbl">Compact menu</span></a></li>
-                    <li><a href="dashboard-addl-menu.html"><span class="lbl">Submenu</span></a></li>
-                    <li><a href="side-menu-avatar.html"><span class="lbl">Menu with avatar</span></a></li>
-                    <li><a href="side-menu-avatar.html"><span class="lbl">Compact menu with avatar</span></a></li>
-                    <li><a href="dark-menu.html"><span class="lbl">Dark menu</span></a></li>
-                    <li><a href="dark-menu-blue.html"><span class="lbl">Blue dark menu</span></a></li>
-                    <li><a href="dark-menu-green.html"><span class="lbl">Green dark menu</span></a></li>
-                    <li><a href="dark-menu-green-compact.html"><span class="lbl">Green compact dark menu</span></a></li>
-                    <li><a href="dark-menu-ultramarine.html"><span class="lbl">Ultramarine dark menu</span></a></li>
-                    <li><a href="asphalt-menu.html"><span class="lbl">Asphalt top menu</span></a></li>
-                    <li><a href="side-menu-big-icon.html"><span class="lbl">Big menu</span></a></li>
-                </ul>
-            </li>
-            <li class="grey with-sub">
-                <span>
-                    <i class="font-icon glyphicon glyphicon-tint"></i>
-                    <span class="lbl">Fuel Utilization</span>
-                </span>
-                <ul>
-                    <li><a href="theme-side-ebony-clay.html"><span class="lbl">Ebony Clay</span></a></li>
-                    <li><a href="theme-side-madison-caribbean.html"><span class="lbl">Madison Caribbean</span></a></li>
-                    <li><a href="theme-side-caesium-dark-caribbean.html"><span class="lbl">Caesium Dark Caribbean</span></a></li>
-                    <li><a href="theme-side-tin.html"><span class="lbl">Tin</span></a></li>
-                    <li><a href="theme-side-litmus-blue.html"><span class="lbl">Litmus Blue</span></a></li>
-                    <li><a href="theme-rebecca-purple.html"><span class="lbl">Rebecca Purple</span></a></li>
-                    <li><a href="theme-picton-blue.html"><span class="lbl">Picton Blue</span></a></li>
-                    <li><a href="theme-picton-blue-white-ebony.html"><span class="lbl">Picton Blue White Ebony</span></a></li>
-                </ul>
-            </li>
-            <li class="purple with-sub">
-                <span>
-                    <i class="font-icon font-icon-comments active"></i>
-                    <span class="lbl">Asset Operation</span>
-                </span>
-                <ul>
-                    <li><a href="messenger.html"><span class="lbl">Messenger</span></a></li>
-                    <li><a href="chat.html"><span class="lbl">Messages</span><span class="label label-custom label-pill label-danger">8</span></a></li>
-                    <li><a href="chat-write.html"><span class="lbl">Write Message</span></a></li>
-                    <li><a href="chat-index.html"><span class="lbl">Select User</span></a></li>
-                </ul>
-            </li>
-            <li class="red">
-                <a href="mail.html">
-                    <i class="font-icon glyphicon glyphicon-send"></i>
-                    <span class="lbl">Payload</span>
-                </a>
-            </li>
-            <li class="blue-dirty">
-                <a href="tables.html">
-                    <span class="glyphicon glyphicon-th"></span>
-                    <span class="lbl">Subscribe to Access</span>
-                </a>
-            </li>
-            <li class="grey">
-                <a href="#">
-                    <span class="lbl">Monitoring</span>
-                </a>
-            </li>
-            <li class="blue with-sub">
-                <span>
-                    <i class="font-icon font-icon-user"></i>
-                    <span class="lbl">Fault Codes</span>
-                </span>
-                <ul>
-                    <li><a href="profile.html"><span class="lbl">Version 1</span></a></li>
-                    <li><a href="profile-2.html"><span class="lbl">Version 2</span></a></li>
-                </ul>
-            </li>
-            <li class="blue-dirty">
-                <a href="tables.html">
-                    <span class="glyphicon glyphicon-th"></span>
-                    <span class="lbl">Tire Monitoring</span>
-                </a>
-            </li>
-            <li class="magenta opened">
-                <a href="index.html">
-                    <i class="font-icon font-icon-calend"></i>
-                    <span class="lbl">Inspections</span>
-                </a>
-            </li>
-            <li class="grey">
-                <a href="index.html" class="label-right">
-                    <i class="font-icon font-icon-contacts"></i>
-                    <span class="lbl">Contracts</span>
-                    <span class="label label-custom label-pill label-danger">35</span>
-                </a>
-            </li>
-            <li class="grey with-sub">
-                <span>
-                    <span class="font-icon font-icon-burger"></span>
-                    <span class="lbl">Nested Menu</span>
-                </span>
-                <ul>
-                    <li><a href="#"><span class="lbl">Level 1</span></a></li>
-                    <li><a href="#"><span class="lbl">Work in progress 2</span></a></li>
-                    <li class="with-sub">
-                        <span>
-                            <span class="lbl">Level 2</span>
-                        </span>
-                        <ul>
-                            <li><a href="#"><span class="lbl">Level 2</span></a></li>
-                            <li><a href="#"><span class="lbl">Level 2</span></a></li>
-                            <li class="with-sub">
-                                <span>
-                                    <span class="lbl">Level 3</span>
-                                </span>
-                                <ul>
-                                    <li><a href="#"><span class="lbl">Level 3</span></a></li>
-                                    <li><a href="#"><span class="lbl">Level 3</span></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <hr />
-        <section>
-            <header class="side-menu-title">Products</header>
-            <ul class="side-menu-list">
-                <li>
-                    <a href="#">
-                        <i class="tag-color green"></i>
-                        <span class="lbl">parts.cat.com</span>
-                    </a>
+        <div class="mobile-menu-left-overlay"></div>
+        <nav class="navbar navbar-light navbar-static bg-faded" role="navigation">
+            <ul class="navbar-side" id="navbarSide">
+                <li class="navbar-side-item">
+                    <a href="#" class="side-link">Lorem</a>
                 </li>
-                <li>
-                    <a href="#">
-                        <i class="tag-color grey-blue"></i>
-                        <span class="lbl">SIS Web</span>
-                    </a>
+                <li class="navbar-side-item">
+                    <a href="#" class="side-link">Ipsum</a>
+                </li>
+                <li class="navbar-side-item">
+                    <a href="#" class="side-link">Dorim</a>
                 </li>
             </ul>
-        </section>
-    </nav><!--.side-menu-->
+            <div class="navbar-overlay"></div>
+        </nav>
+        <!--.side-menu-->
 
-    <div class="page-content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-9">
-                    <div class="map-tile">
-                        <p>map here</p>
-                    </div><!--.map-tile-->
-                </div><!--.col-->
-                <div class="col-xl-3">
-                    <h1>Heading 1</h1>
-                    <h2>Heading 2</h2>
-                    <h3>Heading 3</h3>
-                    <h4>Heading 4</h4>
-                    <h5>Heading 5</h5>
-                    <h6>Heading 6</h6>
-                    <p>Same paragraph tag text line. Lorem Ipsum</p>
-                </div><!--.col-->
-            </div><!--.row-->
-    
-            <div class="row">
-                <div class="col-xl-6 dahsboard-column">
-                    <section class="box-typical box-typical-dashboard panel panel-default scrollable">
-                        <header class="box-typical-header panel-heading">
-                            <h3 class="panel-title">Recent orders</h3>
-                        </header>
-                        <div class="box-typical-body panel-body">
-                            <table class="tbl-typical">
-                                <tr>
-                                    <th><div>Status</div></th>
-                                    <th><div>Clients</div></th>
-                                    <th align="center"><div>Orders#</div></th>
-                                    <th align="center"><div>Date</div></th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-primary">Paid</span>
-                                        <span class="label label-success">Active</span>
-                                    </td>
-                                    <td>John Doe</td>
-                                    <td align="center">3435362</td>
-                                    <td class="color-blue-grey" nowrap align="center"><span class="semibold">Today</span> 8:30</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-primary">Paid</span>
-                                        <span class="label label-success">Active</span>
-                                    </td>
-                                    <td>Thomas Bayer</td>
-                                    <td align="center">3435362</td>
-                                    <td class="color-blue-grey" nowrap align="center"><span class="semibold">Today</span> 16:30</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-primary">Paid</span>
-                                        <span class="label label-default">Inactive</span>
-                                    </td>
-                                    <td>Nicolas Karabat</td>
-                                    <td align="center">3435362</td>
-                                    <td class="color-blue-grey" nowrap align="center"><span class="semibold">Yesterday</span></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-default">Unpaid</span>
-                                        <span class="label label-default">Inactive</span>
-                                    </td>
-                                    <td>Alexandre Pome</td>
-                                    <td align="center">3435362</td>
-                                    <td class="color-blue-grey" nowrap align="center">23th May</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-primary">Paid</span>
-                                        <span class="label label-success">Active</span>
-                                    </td>
-                                    <td>John Doe</td>
-                                    <td align="center">3435362</td>
-                                    <td class="color-blue-grey" nowrap align="center"><span class="semibold">Today</span> 8:30</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-primary">Paid</span>
-                                        <span class="label label-success">Active</span>
-                                    </td>
-                                    <td>Thomas Bayer</td>
-                                    <td align="center">3435362</td>
-                                    <td class="color-blue-grey" nowrap align="center"><span class="semibold">Today</span> 16:30</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-primary">Paid</span>
-                                        <span class="label label-default">Inactive</span>
-                                    </td>
-                                    <td>Nicolas Karabat</td>
-                                    <td align="center">3435362</td>
-                                    <td class="color-blue-grey" nowrap align="center"><span class="semibold">Yesterday</span></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-default">Unpaid</span>
-                                        <span class="label label-default">Inactive</span>
-                                    </td>
-                                    <td>Alexandre Pome</td>
-                                    <td align="center">3435362</td>
-                                    <td class="color-blue-grey" nowrap align="center">23th May</td>
-                                </tr>
-                            </table>
-                        </div><!--.box-typical-body-->
-                    </section><!--.box-typical-dashboard-->
-                </div><!--.col-->
-                <div class="col-xl-6 dahsboard-column">
-                    <section class="box-typical box-typical-dashboard panel panel-default scrollable">
-                        <header class="box-typical-header panel-heading">
-                            <h3 class="panel-title">Lorem Ipsum</h3>
-                        </header>
-                        <div class="box-typical-body panel-body">
-                            <table class="tbl-typical">
-                                <tr>
-                                    <th><div>Status</div></th>
-                                    <th><div>Subject</div></th>
-                                    <th align="center"><div>Department</div></th>
-                                    <th align="center"><div>Date</div></th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-success">Open</span>
-                                    </td>
-                                    <td>Website down for one week</td>
-                                    <td align="center">Support</td>
-                                    <td nowrap align="center"><span class="semibold">Today</span> 8:30</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-success">Open</span>
-                                    </td>
-                                    <td>Restoring default settings</td>
-                                    <td align="center">Support</td>
-                                    <td nowrap align="center"><span class="semibold">Today</span> 16:30</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-warning">Progress</span>
-                                    </td>
-                                    <td>Loosing control on server</td>
-                                    <td align="center">Support</td>
-                                    <td nowrap align="center"><span class="semibold">Yesterday</span></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="label label-danger">Closed</span>
-                                    </td>
-                                    <td>Authorizations keys</td>
-                                    <td align="center">Support</td>
-                                    <td nowrap align="center">23th May</td>
-                                </tr>
-                            </table>
-                        </div><!--.box-typical-body-->
-                    </section><!--.box-typical-dashboard-->
-                </div><!--.col-->
-            </div>
-            <footer>
-                <p class="float-md-left"><small>&copy; 2017 Finning International Inc.</small></p>
-                <p class="float-md-right"><small>Portal UX Prototype v1.0.0-alpha (work in progress)</small></p>
-            </footer>
-        </div><!--.container-fluid-->
-    </div><!--.page-content-->
+        <div class="page-content" id="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-9">
+                        <div class="map-tile">
+                            <p>map here</p>
+                        </div><!--.map-tile-->
+                    </div><!--.col-->
+                    <div class="col-xl-3">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                        <p>Same paragraph tag text line. Lorem Ipsum</p>
+                    </div><!--.col-->
+                </div><!--.row-->
+        
+                <footer>
+                    <p class="float-md-left"><small>&copy; 2017 Finning International Inc.</small></p>
+                    <p class="float-md-right"><small>Portal UX Prototype v1.0.0-alpha (work in progress)</small></p>
+                </footer>
+            </div><!--.container-fluid-->
+        </div><!--.page-content-->
 
-    <div class="control-panel-container">
-        <ul>
-            <li class="tasks">
-                <div class="control-item-header">
-                    <a href="#" class="icon-toggle">
-                        <span class="caret-down fa fa-caret-down"></span>
-                        <span class="icon fa fa-tasks"></span>
-                    </a>
-                    <span class="text">Task list</span>
-                    <div class="actions">
-                        <a href="#">
-                            <span class="fa fa-refresh"></span>
+        <div class="control-panel-container">
+            <ul>
+                <li class="tasks">
+                    <div class="control-item-header">
+                        <a href="#" class="icon-toggle">
+                            <span class="caret-down fa fa-caret-down"></span>
+                            <span class="icon fa fa-tasks"></span>
                         </a>
-                        <a href="#">
-                            <span class="fa fa-cog"></span>
-                        </a>
-                        <a href="#">
-                            <span class="fa fa-trash"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="control-item-content">
-                    <div class="control-item-content-text">You don't have pending tasks.</div>
-                </div>
-            </li>
-            <li class="sticky-note">
-                <div class="control-item-header">
-                    <a href="#" class="icon-toggle">
-                        <span class="caret-down fa fa-caret-down"></span>
-                        <span class="icon fa fa-file"></span>
-                    </a>
-                    <span class="text">Sticky Note</span>
-                    <div class="actions">
-                        <a href="#">
-                            <span class="fa fa-refresh"></span>
-                        </a>
-                        <a href="#">
-                            <span class="fa fa-cog"></span>
-                        </a>
-                        <a href="#">
-                            <span class="fa fa-trash"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="control-item-content">
-                    <div class="control-item-content-text">
-                        StartUI – a full featured, premium web application admin dashboard built with Twitter Bootstrap 4, JQuery and CSS
-                    </div>
-                </div>
-            </li>
-            <li class="emails">
-                <div class="control-item-header">
-                    <a href="#" class="icon-toggle">
-                        <span class="caret-down fa fa-caret-down"></span>
-                        <span class="icon fa fa-envelope"></span>
-                    </a>
-                    <span class="text">Recent e-mails</span>
-                    <div class="actions">
-                        <a href="#">
-                            <span class="fa fa-refresh"></span>
-                        </a>
-                        <a href="#">
-                            <span class="fa fa-cog"></span>
-                        </a>
-                        <a href="#">
-                            <span class="fa fa-trash"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="control-item-content">
-                    <section class="control-item-actions">
-                        <a href="#" class="link">My e-mails</a>
-                        <a href="#" class="mark">Mark visible as read</a>
-                    </section>
-                    <ul class="control-item-lists">
-                        <li>
+                        <span class="text">Task list</span>
+                        <div class="actions">
                             <a href="#">
-                                <h6>Welcome to the Community!</h6>
-                                <div>Hi, welcome to the my app...</div>
-                                <div>
-                                    Message text
-                                </div>
+                                <span class="fa fa-refresh"></span>
                             </a>
-                            <a href="#" class="reply-all">Reply all</a>
-                        </li>
-                        <li>
                             <a href="#">
-                                <h6>Welcome to the Community!</h6>
-                                <div>Hi, welcome to the my app...</div>
-                                <div>
-                                    Message text
-                                </div>
+                                <span class="fa fa-cog"></span>
                             </a>
-                            <a href="#" class="reply-all">Reply all</a>
-                        </li>
-                        <li>
                             <a href="#">
-                                <h6>Welcome to the Community!</h6>
-                                <div>Hi, welcome to the my app...</div>
-                                <div>
-                                    Message text
-                                </div>
+                                <span class="fa fa-trash"></span>
                             </a>
-                            <a href="#" class="reply-all">Reply all</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="add">
-                <div class="control-item-header">
-                    <a href="#" class="icon-toggle no-caret">
-                        <span class="icon fa fa-plus"></span>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <a class="control-panel-toggle">
-            <span class="fa fa-angle-double-left"></span>
-        </a>
-    </div>
+                        </div>
+                    </div>
+                    <div class="control-item-content">
+                        <div class="control-item-content-text">You don't have pending tasks.</div>
+                    </div>
+                </li>
+                <li class="sticky-note">
+                    <div class="control-item-header">
+                        <a href="#" class="icon-toggle">
+                            <span class="caret-down fa fa-caret-down"></span>
+                            <span class="icon fa fa-file"></span>
+                        </a>
+                        <span class="text">Sticky Note</span>
+                        <div class="actions">
+                            <a href="#">
+                                <span class="fa fa-refresh"></span>
+                            </a>
+                            <a href="#">
+                                <span class="fa fa-cog"></span>
+                            </a>
+                            <a href="#">
+                                <span class="fa fa-trash"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="control-item-content">
+                        <div class="control-item-content-text">
+                            StartUI – a full featured, premium web application admin dashboard built with Twitter Bootstrap 4, JQuery and CSS
+                        </div>
+                    </div>
+                </li>
+                <li class="emails">
+                    <div class="control-item-header">
+                        <a href="#" class="icon-toggle">
+                            <span class="caret-down fa fa-caret-down"></span>
+                            <span class="icon fa fa-envelope"></span>
+                        </a>
+                        <span class="text">Recent e-mails</span>
+                        <div class="actions">
+                            <a href="#">
+                                <span class="fa fa-refresh"></span>
+                            </a>
+                            <a href="#">
+                                <span class="fa fa-cog"></span>
+                            </a>
+                            <a href="#">
+                                <span class="fa fa-trash"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="control-item-content">
+                        <section class="control-item-actions">
+                            <a href="#" class="link">My e-mails</a>
+                            <a href="#" class="mark">Mark visible as read</a>
+                        </section>
+                        <ul class="control-item-lists">
+                            <li>
+                                <a href="#">
+                                    <h6>Welcome to the Community!</h6>
+                                    <div>Hi, welcome to the my app...</div>
+                                    <div>
+                                        Message text
+                                    </div>
+                                </a>
+                                <a href="#" class="reply-all">Reply all</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h6>Welcome to the Community!</h6>
+                                    <div>Hi, welcome to the my app...</div>
+                                    <div>
+                                        Message text
+                                    </div>
+                                </a>
+                                <a href="#" class="reply-all">Reply all</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h6>Welcome to the Community!</h6>
+                                    <div>Hi, welcome to the my app...</div>
+                                    <div>
+                                        Message text
+                                    </div>
+                                </a>
+                                <a href="#" class="reply-all">Reply all</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="add">
+                    <div class="control-item-header">
+                        <a href="#" class="icon-toggle no-caret">
+                            <span class="icon fa fa-plus"></span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <a class="control-panel-toggle">
+                <span class="fa fa-angle-double-left"></span>
+            </a>
+        </div>
   
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/lib/jquery/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="js/lib/bootstrap/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
 
     <script src="js/lib/jqueryui/jquery-ui.min.js"></script>
     <script src="js/lib/lobipanel/lobipanel.min.js"></script>
