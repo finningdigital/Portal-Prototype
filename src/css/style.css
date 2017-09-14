@@ -1,13 +1,13 @@
 .navbar-side {
   height: 100%;
-  width: 25%;
+  width: 310px;
   position: fixed;
   top: 0;
-  left: -25%;
+  left: -310px;
   padding: 0;
   list-style: none;
   border-left: 2px solid #ccc;
-  background-color: #f7f7f9;
+  background-color: #f5f7f6;
   overflow-y: scroll;
   z-index: 1000;
   -webkit-transform: translateX(0%);
@@ -12453,10 +12453,6 @@ html {
 .show-hide-sidebar:hover span, .show-hide-sidebar:hover span:after, .show-hide-sidebar:hover span:before {
   background-color: #ffc200; }
 
-@media (max-width: 1056px) {
-  .show-hide-sidebar {
-    display: block; } }
-
 body.sidebar-hidden .side-menu {
   display: none; }
 
@@ -12468,10 +12464,6 @@ body.sidebar-hidden .side-menu-addl {
 
 body.sidebar-hidden .side-menu-addl + .page-content {
   padding-left: 240px; }
-
-@media screen and (max-width: 1056px) {
-  .show-hide-sidebar {
-    display: none !important; } }
 
 @media print {
   body {

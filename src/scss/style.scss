@@ -15640,12 +15640,6 @@ html {
   background-color: #ffc200;
 }
 
-@media (max-width: 1056px) {
-  .show-hide-sidebar {
-    display: block;
-  }
-}
-
 body.sidebar-hidden .side-menu {
   display: none;
 }
@@ -15660,12 +15654,6 @@ body.sidebar-hidden .side-menu-addl {
 
 body.sidebar-hidden .side-menu-addl + .page-content {
   padding-left: 240px;
-}
-
-@media screen and (max-width: 1056px) {
-  .show-hide-sidebar {
-    display: none !important;
-  }
 }
 
 @media print {
