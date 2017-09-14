@@ -13,7 +13,7 @@
   "author": "Tyler Lange",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha",
+    "bootstrap": "^4.0.0-beta",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.5"
   },
