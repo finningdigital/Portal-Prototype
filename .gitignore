@@ -57,6 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# OSX
+*.DS_Store
+
 # Individual Files
 src/start-ui.html
 
