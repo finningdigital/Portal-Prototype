@@ -10519,7 +10519,7 @@ body {
   color: #00a8ff; }
 
 .site-header .dropdown.dropdown-lang .dropdown-menu {
-  width: 250px; }
+  width: 160px; }
 
 .site-header .dropdown.dropdown-lang .dropdown-menu .flag-icon {
   margin: 0 5px 0 0;
@@ -10596,7 +10596,7 @@ body {
   color: #00a8ff; }
 
 .site-header .site-header-search-container {
-  float: right;
+  float: left;
   width: 158px;
   margin: 0 10px 0 0;
   zoom: 1; }
