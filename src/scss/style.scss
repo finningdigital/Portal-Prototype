@@ -3,9 +3,12 @@
 @import "side-menu";
 @import "type";
 
-// Portal styles
+// Colors
 
 $bg-color: #eceff4;
+$cat-yellow: #ffce19;
+
+// Portal styles
 
 body {
     background: $bg-color;
@@ -13132,8 +13135,8 @@ body {
   padding: 0 12px;
   font-size: .8125rem;
   line-height: 28px;
-  background-color: #ffc200;
-  border-color: #ffc200;
+  background-color: $cat-yellow;
+  border-color: $cat-yellow;
   color: #222;
 }
 
