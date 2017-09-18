@@ -22,6 +22,8 @@
   margin: 0;
   background: #ffce19;
   /* Cat Yellow */ }
+  .navbar-account .navbar-user {
+    margin-left: 20px; }
 
 .navbar-side-item {
   padding: 0 0 0.75rem 0;
