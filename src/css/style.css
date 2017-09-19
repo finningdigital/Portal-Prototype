@@ -10101,7 +10101,7 @@ body {
   float: left;
   height: 17px;
   position: relative;
-  top: 0px;
+  top: -1px;
   margin-left: 20px; }
 
 @media (max-width: 767px) {
