@@ -19,7 +19,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/neosmedia/finning-digital-portal-alpha.git"
+    "url": "https://github.com/finningdigital/Portal-Prototype.git"
+    // "url": "https://github.com/neosmedia/finning-digital-portal-alpha.git"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
