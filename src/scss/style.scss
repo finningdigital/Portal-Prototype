@@ -12108,7 +12108,7 @@ body.modal-open {
 }
 
 .box-typical.box-typical-dashboard .box-typical-header {
-  border-bottom: solid 1px #d8e2e7;
+  border-bottom: solid 1px $med-grey;
 }
 
 .box-typical.box-typical-dashboard .box-typical-body {
@@ -12167,7 +12167,7 @@ body.modal-open {
 }
 
 .box-typical .panel-heading {
-  padding: 17px 20px;
+  padding: 5px 10px;
 }
 
 .box-typical .panel-title {
@@ -12182,7 +12182,7 @@ body.modal-open {
 }
 
 .box-panel .box-typical-header {
-  border-bottom: 1px solid #d8e2e7;
+  border-bottom: 1px solid $med-grey;
 }
 
 .box-panel .box-typical-body {
