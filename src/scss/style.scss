@@ -1,5 +1,6 @@
 // Imports
 
+@import "icons";
 @import "side-menu";
 @import "type";
 
@@ -16,7 +17,7 @@ body {
     background: $bg-color;
 }
 
-// Starter Page
+// Index / Starter Page
 
 body.index {
   background: #fff;
@@ -6515,8 +6516,8 @@ textarea.form-control {
 }
 
 .btn-group.bootstrap-select.open.dropup .dropdown-menu {
-  -webkit-border-radius: .25rem .25rem 0 0;
-  border-radius: .25rem .25rem 0 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   border-top: solid 1px #d8e2e7;
   border-bottom: none;
   margin-bottom: -1px;
