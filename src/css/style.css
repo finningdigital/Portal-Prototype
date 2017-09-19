@@ -9811,7 +9811,7 @@ body.modal-open {
   overflow: hidden; }
 
 .box-typical.box-typical-dashboard .box-typical-header {
-  border-bottom: solid 1px #d8e2e7; }
+  border-bottom: solid 1px #bbb; }
 
 .box-typical.box-typical-dashboard .box-typical-body {
   overflow: auto;
@@ -9858,7 +9858,7 @@ body.modal-open {
   content: "\e07a"; }
 
 .box-typical .panel-heading {
-  padding: 17px 20px; }
+  padding: 5px 10px; }
 
 .box-typical .panel-title {
   white-space: nowrap;
@@ -9871,7 +9871,7 @@ body.modal-open {
   padding: 0; }
 
 .box-panel .box-typical-header {
-  border-bottom: 1px solid #d8e2e7; }
+  border-bottom: 1px solid #bbb; }
 
 .box-panel .box-typical-body {
   padding: 16px !important; }
