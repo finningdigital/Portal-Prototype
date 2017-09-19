@@ -1,6 +1,7 @@
 // Imports
 
 @import "icons";
+@import "map";
 @import "overrides";
 @import "side-menu";
 @import "type";
@@ -16,7 +17,7 @@ $flat-black:  #000;
 // Portal styles
 
 body {
-    background: $bg-color;
+  background: $bg-color;
 }
 
 // Index / Starter Page
