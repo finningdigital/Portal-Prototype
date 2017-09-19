@@ -1,7 +1,7 @@
 ## Portal Prototype Dashboard
 Finning Digital Portal prototype using Bootstrap 4 HTML, Sass and jQuery.
 
-## Instalation
+## Installation
 To install this Prototype you will need Node and npm installed. To see if you have it installed:  
 `node -v`
 <br/>
