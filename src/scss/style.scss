@@ -7,6 +7,8 @@
 
 $bg-color: #eceff4;
 $cat-yellow: #ffce19;
+$near-black: #101010;
+$flat-black: #000;
 
 // Portal styles
 
@@ -12418,10 +12420,10 @@ body {
   height: 30px;
   position: relative;
   padding: 0 35px 0 0;
-  border: solid 1px #c5d6de;
-  -webkit-border-radius: 25rem;
-  border-radius: 25rem;
-  background: #fff;
+  border: solid 1px $flat-black;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: $near-black;
   overflow: hidden;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -12434,7 +12436,7 @@ body {
   background: 0 0;
   font-size: .875rem;
   font-weight: 600;
-  color: #343434;
+  color: #eee;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
@@ -12463,7 +12465,7 @@ body {
 }
 
 .site-header-search.closed {
-  width: 37px;
+  width: 120px;
   border-color: transparent;
 }
 
@@ -12527,6 +12529,7 @@ body {
   height: 17px;
   position: relative;
   top: 0px;
+  margin-left: 20px;
 }
 
 @media (max-width: 767px) {
@@ -13153,7 +13156,7 @@ body {
 
 .site-header .site-header-search-container {
   float: left;
-  width: 158px;
+  width: 420px;
   margin: 0 10px 0 0;
   zoom: 1;
 }
@@ -13168,7 +13171,7 @@ body {
 }
 
 .site-header .site-header-search-container .site-header-search {
-  float: right;
+  float: left;
 }
 
 .site-header .site-header-collapsed {
@@ -13258,7 +13261,7 @@ body {
 
   .site-header .site-header-collapsed .site-header-search.closed {
     width: 100%;
-    border-color: #c5d6de;
+    border-color: $near-black;
   }
 
   .site-header .site-header-collapsed .site-header-search.closed .overlay {
