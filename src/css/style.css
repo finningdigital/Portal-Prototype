@@ -25,6 +25,9 @@
 .material-icons.md-light.md-inactive {
   color: rgba(255, 255, 255, 0.3); }
 
+.dropdown-menu {
+  border-radius: 0; }
+
 .navbar-side {
   height: 100%;
   width: 310px;
